@@ -1,0 +1,25 @@
+" default configuration
+source ~/.dotfiles/vim/common.vim
+
+" source specialized Vim conffiles
+source ~/.dotfiles/vim/perl.vim
+source ~/.dotfiles/vim/ruby.vim
+
+set laststatus=2
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+" vroom vroom !
+set exrc
+
+nmap _c 79i=<ESC>oVersion:  <ESC>4i <ESC>:r!date +'\%Y-\%m-\%d \%H:\%M:\%S'<CR><UP>JA    (Alexis Sukrieh)<ESC>o<ESC>79i=<ESC>
+
+au bufNewFile *.pm 0r ~/.vim/templates/mouse-class.pm
+au bufNewFile *.t 0r ~/.vim/templates/test-perl.t
+
+filetype plugin on
+
+colorscheme sukria
+
+set laststatus=2

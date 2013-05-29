@@ -1,0 +1,7 @@
+alias l="ls -l"
+alias la="ls -la"
+alias ai="sudo apt-get install"
+alias as="apt-cache search"
+alias gi="sudo gem install --no-ri --no-rdoc"
+alias ppush="git push origin users/unickuity"
+alias clean_dir="find . -name \*~ -exec rm {} \;"
